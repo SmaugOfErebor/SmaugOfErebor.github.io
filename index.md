@@ -28,4 +28,16 @@ The complete list of changes and a full diff of the code can be found [here](htt
 
 ## Enhancement 2 - Algorithms and Data Structure
 
+For this enhancement, I built upon the search result list view created in the first enhancement. Now that I had a list view, I needed to fill it. I developed an algorithm to perform a fuzzy search based on the campsite name as a search criteria. The algorithm creates and executes multiple SQL queries to expand the search results, providing the expected behavior to the user.
+
+The algorithm determines n-grams to be used and creates queries based on those n-grams. The result is a list of results with an exact match at the top, with results containing an exact match of an individual word below that, and with results containing matches of misspelled words below that. The new results in the list view using the search criteria "Colorado Camp" are shown below:
+
+![New Search Results](https://raw.githubusercontent.com/SmaugOfErebor/SmaugOfErebor.github.io/master/Media/NewSearchResults.png)
+
+The new results in the list view using the incorrectly spelled search criteria "Goergia" are shown below:
+
+![Typo Search Results](https://raw.githubusercontent.com/SmaugOfErebor/SmaugOfErebor.github.io/master/Media/TypoSearchResults.png)
+
+The complete list of changes and a full diff of the code can be found [here](https://github.com/SmaugOfErebor/CampsiteLocator/commit/1fd988dea1f880fd8675cb40c7f51dd0a8d02d2b).
+
 ## Enhancement 3 - Databases
