@@ -2,7 +2,8 @@
 <html>
     <style>
         #body {
-            height: 100vh;
+            background-attachment: fixed;
+            height: 100%;
             background-image: linear-gradient(#E8834B, #FFE180);
         }
         #header1, #header2, #header3, #header4 {
@@ -22,10 +23,24 @@
         }
         #header4 {
             font-size: calc(12px + 0.1vw);
+        }
+        #categoryDiv {
+            background-color: rgba(128, 128, 128, 0.2);
+            min-Width: 420px;
+            max-width: 47vw;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 5px;
+            border-radius: 20px;
+        }
+        #itemDiv {
+            background-color: rgba(128, 128, 128, 0.15);
             min-width: 400px;
             max-width: 45vw;
             margin-left: auto;
             margin-right: auto;
+            padding: 5px;
+            border-radius: 20px;
         }
     </style>
 
@@ -35,41 +50,64 @@
 
             <p id="header2">My Work</p>
 
-            <p id="header3">Games</p>
-            <a href="https://codenmore.itch.io/xylem-and-phloem">Xylem and Phloem</a>
-            <br>
-            <p id="header4">
-                Play as Xylem, a tree trying to outgrow the evil tree Phloem.
-                Grow your roots to gather nutrients. Grow your leaves to convert nutrients to chlorophyll.
-                Win by severing the base branch or root of Phloem.
-                Made with <a href="https://godotengine.org/">Godot Engine</a> in under 72 hours for <a href="https://ldjam.com/">Ludum Dare</a> with the help of my friend <a href="https://codenmore.github.io/">CodeNMore</a>.
-            </p>
-            <br>
-            <a href="./Snuffles/snuffles.html">Snuffles</a>
-            <br>
-            <p id="header4">
-                A 2D platformer where you play as a boy that gains or loses abilities as a result of what smells he has encountered.
-                Currently in development using <a href="https://unity.com/">Unity</a>.
-            </p>
+            <div id="categoryDiv">
+                <p id="header3">Games</p>
 
-            <p id="header3">Music</p>
-            <a href="https://soundcloud.com/justmusickidding">Just Kidding</a>
-            <br>
-            <p id="header4">
-                An electronic group consisting of myself and my best friend.
-                We try to progress through genres and styles enough to make instrumental music that keeps your attention.
-            </p>
-            <br>
-            <a href="https://soundcloud.com/justmusickidding/sets/go-long">Go Long</a>
-            <br>
-            <p id="header4">
-                Our most recent album released November 14th 2021. 
-            </p>
-            <br>
-            <a href="https://soundcloud.com/justmusickidding/sets/wacky-wednesday">Wacky Wednesday</a>
-            <p id="header4">
-                Our first album produced largely in my car and released on December 21st 2017.
-            </p>
+                <div id="itemDiv">
+                    <a href="https://codenmore.itch.io/xylem-and-phloem">Xylem and Phloem</a>
+                    <br>
+                    <p id="header4">
+                        Play as Xylem, a tree trying to outgrow the evil tree Phloem.
+                        Grow your roots to gather nutrients. Grow your leaves to convert nutrients to chlorophyll.
+                        Win by severing the base branch or root of Phloem.
+                        Made with <a href="https://godotengine.org/">Godot Engine</a> in under 72 hours for <a href="https://ldjam.com/">Ludum Dare</a> with the help of my friend <a href="https://codenmore.github.io/">CodeNMore</a>.
+                    </p>
+                </div>
+
+                <br>
+
+                <div id="itemDiv">
+                    <a href="./Snuffles/snuffles.html">Snuffles</a>
+                    <br>
+                    <p id="header4">
+                        A 2D platformer where you play as a boy that gains or loses abilities as a result of what smells he has encountered.
+                        Currently in development using <a href="https://unity.com/">Unity</a>.
+                    </p>
+                </div>
+            </div>
+
+            <div id="categoryDiv">
+                <p id="header3">Music</p>
+
+                <div id="itemDiv">
+                    <a href="https://soundcloud.com/justmusickidding">Just Kidding</a>
+                    <br>
+                    <p id="header4">
+                        An electronic group consisting of myself and my best friend.
+                        We try to progress through genres and styles enough to make instrumental music that keeps your attention.
+                    </p>
+                </div>
+
+                <br>
+
+                <div id="itemDiv">
+                    <a href="https://soundcloud.com/justmusickidding/sets/go-long">Go Long</a>
+                    <br>
+                    <p id="header4">
+                        Our most recent album released November 14th 2021. 
+                    </p>
+                </div>
+
+                <br>
+
+                <div id="itemDiv">
+                    <a href="https://soundcloud.com/justmusickidding/sets/wacky-wednesday">Wacky Wednesday</a>
+                    <p id="header4">
+                        Our first album produced largely in my car and released on December 21st 2017.
+                    </p>
+                </div>
+            </div>
+
         </div>
     </body>
 </html>
