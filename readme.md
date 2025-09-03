@@ -1,1 +1,1 @@
-[The actual site](SmaugOfErebor.github.io)
+[The actual site](https://smaugoferebor.github.io/)
